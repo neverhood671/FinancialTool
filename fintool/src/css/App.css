@@ -1,0 +1,7 @@
+.App {
+  display: grid;
+  grid-template-columns: 20vw 70vw;
+  grid-template-rows: 20vw 70vh;
+  grid-gap: 5vh;
+  font: 22px arial;
+}

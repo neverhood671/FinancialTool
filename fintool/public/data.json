@@ -1,0 +1,67 @@
+[
+    {
+       "id": "96145928-c9e9-4816-b97b-366e31ba7ed1",
+        "createdDate": "09.05.2018 13:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "56c1ddc6-b71e-45fc-ba05-80cd545da0c7",
+        "description": "Burger king",
+        "value": 200
+    },
+    {
+        "id": "b4e366ca-e0c4-4b3c-b099-8d15a2ba8185",
+        "createdDate": "10.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    },
+    {
+        "id": "f32f8898-5dbb-434e-8794-927d594b042d",
+        "createdDate": "11.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    },
+    {
+        "id": "71744d2d-6416-4e5c-982e-9e1e8119bd12",
+        "createdDate": "12.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    },
+    {
+        "id": "7316fc1e-3b12-4511-9940-4cb30749772c",
+        "createdDate": "13.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    },
+    {
+        "id": "7324eca8-611a-4f55-964d-69d7f6f39442",
+        "createdDate": "14.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    },
+    {
+        "id": "58194e9d-e8a0-405b-a360-58325bec5ee1",
+        "createdDate": "15.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    }
+    ,
+    {
+        "id": "dd956eec-feb6-49b1-b6af-379cef516787",
+        "createdDate": "09.05.2018 18:05",
+        "createdById": "40aa4388-db53-4447-a1f5-f9015c5c7ae1",
+        "categoryId": "5a0ffa9c-589b-4189-9dc5-e4d9e768d3a6",
+        "description": "Бритва",
+        "value": 1122.12
+    }
+]

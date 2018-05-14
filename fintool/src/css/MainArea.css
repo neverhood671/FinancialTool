@@ -1,0 +1,10 @@
+.MainArea{
+    background-color: #f7f7f7;
+    grid-area: 1/2/3/3;
+    text-align: center;
+}
+
+.main_area_header{
+  margin-top: 3%;
+  font-size: 1.5em;
+}
