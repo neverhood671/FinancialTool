@@ -10,6 +10,7 @@ import '../css/MainArea.css';
 import '../css/RemindersBlock.css';
 import '../css/StackedBarChart.css';
 import '../css/SideBlock.css';
+import '../css/ModalWindow.css';
 
 import SideBlock from "./additional/SideBlock";
 import MainArea from "./main/MainArea";
