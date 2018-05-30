@@ -1,15 +1,23 @@
 
-.BarChart{
-  height: 60%;
-}
 .barchart-block {
     width: 100%;
-    height: 100%;
-    font-size: 0.5em;
+    height: 60%;
     background-color: #f7f7f7;
+}
+
+.barchart {
+  font-size: 0.5em;
+  width: 100%;
+  height: 100%;
 }
 
 .axis path {
    fill: none;
    stroke: black;
+}
+
+.bar {
+  fill: steelblue;
+  width: 5%;
+  transform: translate(11%, 7%);
 }

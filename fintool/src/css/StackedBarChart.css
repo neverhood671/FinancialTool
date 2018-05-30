@@ -1,6 +1,6 @@
-.StackedBarChart{
-  width: 80%;
-  height: 10%;
+.stacked_barchart{
+  width: 100%;
+  grid-area: 1/1/2/3;
   background-color: #cee7fb;
   border: 2px solid;
   margin: 3% auto;

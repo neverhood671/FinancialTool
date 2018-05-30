@@ -1,0 +1,11 @@
+.info {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns:  1fr 2fr;
+  grid-template-rows: 2fr 0.5fr 6fr;
+  grid-gap: 1em;
+}
+.info button {
+  font-size: 0.8em;
+}
