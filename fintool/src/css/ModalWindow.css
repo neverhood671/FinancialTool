@@ -70,7 +70,7 @@
 }
 
 .newNoteHeader {
-    grid-area: 1/1/2/4;
+  grid-area: 1/1/2/4;
 }
 
 .dateInput {

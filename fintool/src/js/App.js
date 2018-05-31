@@ -18,9 +18,11 @@ import MainArea from "./main/MainArea";
 class App extends Component {
   render() {
     return (
-      <div className="app">
-        <SideBlock />
-        <MainArea />
+      <div className="content">
+        <div className="app">
+          <SideBlock />
+          <MainArea />
+        </div>
       </div>
     );
   }

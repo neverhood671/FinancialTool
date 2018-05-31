@@ -1,8 +1,7 @@
-
 .barchart-block {
-    width: 100%;
-    height: 60%;
-    background-color: #f7f7f7;
+  width: 100%;
+  height: 40%;
+  background-color: #f7f7f7;
 }
 
 .barchart {
@@ -12,8 +11,8 @@
 }
 
 .axis path {
-   fill: none;
-   stroke: black;
+  fill: none;
+  stroke: black;
 }
 
 .bar {

@@ -1,0 +1,6 @@
+.side_block {
+  grid-area: 1/1/3/2;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-gap: 8%;
+}

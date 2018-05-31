@@ -16,7 +16,6 @@
 
 .dropdown_menu {
   background-color: #cee7fb;
-
 }
 
 .dropdown_arrow::after {
@@ -24,7 +23,7 @@
   color: #cee7fb;
 }
 
-.dropdown_placeholder{
+.dropdown_placeholder {
   display: inline-block;
   margin: 5% 20% 5% 5%;
 }

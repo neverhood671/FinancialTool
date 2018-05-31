@@ -22,8 +22,6 @@ class NewNoteForm extends Component {
         <label>Date</label>{date}
         <label>Category</label>{category}
         <label>Amount</label> {amount}
-
-
       </div>
     );
   }
