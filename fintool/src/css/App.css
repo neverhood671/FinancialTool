@@ -7,7 +7,7 @@
 .app {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 40% 60%;
-  grid-gap: 5%;
-  font: 22px sans-serif;
+  grid-gap: 20px;
+  font: 18px sans-serif;
+  min-height: 850px;
 }

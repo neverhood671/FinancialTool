@@ -9,10 +9,8 @@
   display: table-cell;
   cursor: pointer;
   height: 45px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   background: #cee7fb;
-  font-weight: 700;
-  font-size: 16px;
   border: solid 1px #cee7fb;
   border-radius: 0;
 }
@@ -21,5 +19,7 @@
   position: static;
   border-radius: 0px;
   max-width: none;
+  min-width: 280px;
   width: auto;
+  font-size: 10px;
 }

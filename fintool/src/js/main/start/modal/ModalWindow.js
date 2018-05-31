@@ -6,19 +6,21 @@ class ModalWindow extends Component {
 
   constructor(props){
     super(props);
-    this.closeModalWindow = props.closeHandler;
-    this.type = props.modalWindowType;
+    this.state = {
+      closeModalWindow: props.closeHandler,
+      type: props.modalWindowType
+    };
   }
 
   render() {
     var form;
-    if (this.type == "new_reminder") {
+    if (this.state.type == "new_reminder") {
       form = <NewReminderForm/>;
-    } else if (this.type == "new_note") {
+    } else if (this.state.type == "new_note") {
       form = <NewNoteForm/>
     }
 
-    var close = <div onClick={this.closeModalWindow} className="close">X</div>,
+    var close = <div onClick={this.state.closeModalWindow} className="close">X</div>,
         save = <button className="save_button">SAVE</button>,
         content = <div className="modal_content">
                       {close}
