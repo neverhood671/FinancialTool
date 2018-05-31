@@ -2,18 +2,18 @@ import React, { Component } from 'react';
 
 class NewNoteForm extends Component {
   render() {
-    var type = <span className="noteTypeSelector">
+    var type = <span className="note_type_selector">
                   <label>Income</label>
                   <input type="checkbox"/>
                   <label>Expenses</label>
                </span>,
-        date = <input></input>,
-        category = <input></input>,
-        amount = <input></input>,
+        date = <input className="date_input"></input>,
+        category = <select className="category_input"></select>,
+        amount = <input className="amount_input"></input>,
         description = <input></input>;
     return (
       <div className="new_note_form">
-        <h1 className="newNoteHeader">Add New Note</h1>
+        <h1 className="new_note_header">Add New Note</h1>
         {type}
         <div className="description_block">
           <label>Description</label>
@@ -24,6 +24,20 @@ class NewNoteForm extends Component {
         <label>Amount</label> {amount}
       </div>
     );
+  }
+
+  componentDidMount(){
+    this.createCategoriesDropDown();
+  }
+
+  createCategoriesDropDown = () => {
+    var categories = ["food", "dance", "transport"];
+    var dropdown = document.querySelector(".category_input");
+    categories.forEach((category, i) => {
+        var option = document.createElement('option');
+        option.innerHTML = category;
+        dropdown.append(option);
+    });
   }
 }
 
