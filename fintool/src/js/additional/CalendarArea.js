@@ -1,28 +1,27 @@
 import React, {Component} from 'react';
-import ModernDatepicker from 'react-modern-datepicker';
+import Calendar from 'react-calendar';
 import moment from 'moment';
 
 
 class CalendarArea extends Component {
 
   state = {
-    startDate: moment()
+    selectedDate: moment()
   };
 
-  handleChange = (date) => {
+  onChange = (date) => {
     this.setState({
-      startDate: date
+      selectedDate: date
     });
   }
 
   render() {
     return (
       <div className="calendar_area">
-        <ModernDatepicker
-          date = {this.state.startDate}
-          format = {'DD-MM-YYYY'}
-          className = 'color'
-          onChange = {this.handleChange}
+        <Calendar
+          onChange={this.onChange}
+          value={this.state.date}
+          className="calendar"
         />
       </div>
     );

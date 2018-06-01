@@ -1,12 +1,12 @@
 .content {
     margin: 0 auto;
-    min-width: 820px;
+    min-width: 600px;
     max-width: 1200px;
 }
 
 .app {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 25% 75%;
   grid-gap: 20px;
   font: 18px sans-serif;
   min-height: 850px;

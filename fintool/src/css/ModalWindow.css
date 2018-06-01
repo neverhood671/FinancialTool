@@ -91,6 +91,7 @@
   grid-area: 2/3/6/4;
 }
 
-.invalid_input{
+.invalid_input {
   color: red;
+  background: rgba(255, 0, 0 , 0.5);
 }

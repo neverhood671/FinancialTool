@@ -1,5 +1,5 @@
 .side_block {
   grid-area: 1/1/2/2;
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 35% 65%;
 }

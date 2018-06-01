@@ -26,7 +26,7 @@ class NewNoteForm extends Component {
     );
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.createCategoriesDropDown();
   }
 

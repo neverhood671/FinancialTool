@@ -2,24 +2,6 @@
   grid-area: 1/1/2/2;
 }
 
-.color.color {
-  width: 100%;
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
-  cursor: pointer;
-  height: 45px;
-  margin-bottom: 10px;
-  background: #cee7fb;
-  border: solid 1px #cee7fb;
-  border-radius: 0;
-}
-
-.color.color+div {
-  position: static;
-  border-radius: 0px;
-  max-width: none;
-  min-width: 280px;
-  width: auto;
-  font-size: 10px;
+.calendar {
+  width: auto !important;
 }
