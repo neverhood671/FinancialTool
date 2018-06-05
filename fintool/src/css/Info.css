@@ -3,9 +3,22 @@
   height: 100%;
   display: grid;
   grid-template-columns:  1fr 2fr;
-  grid-template-rows: 2fr 0.5fr 6fr;
+  grid-template-rows: 0.2fr 2fr 0.5fr 6fr;
   grid-gap: 1em;
 }
-.info button {
+.open_modal_button {
   font-size: 0.8em;
+}
+
+.info_header {
+  grid-area: 1/1/2/3;
+}
+
+.reminders_block {
+  background: white;
+}
+
+
+.last_notes_block {
+  background: white;
 }

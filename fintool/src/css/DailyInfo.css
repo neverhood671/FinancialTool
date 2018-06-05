@@ -1,7 +1,42 @@
 .daily_info {
   width: 100%;
   height: 100%;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 20% 60%;
-  grid-gap: 5vh;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-gap: 5px;
+}
+
+.tool_bar {
+  display: grid;
+  grid-template-columns:  33% 33% 33%;
+}
+.tool_bar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button_circle {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.button_circle.green {
+  grid-area: 1/1/2/2;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTIwIDEyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjUwIiBmaWxsPSIjNzVkNzZiIj48L2NpcmNsZT4KPC9zdmc+");
+}
+
+.button_circle.red {
+  grid-area: 1/2/2/3;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTIwIDEyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjUwIiBmaWxsPSIjYTYxODZiIj48L2NpcmNsZT4KPC9zdmc+");
+}
+
+.button_circle.blue {
+  grid-area: 1/3/2/4;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTIwIDEyMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iNjAiIHI9IjUwIiBmaWxsPSIjM2M1NWMxIj48L2NpcmNsZT4KPC9zdmc+");
+}
+
+.button_text{
+  display: inline-block;
 }

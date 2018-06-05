@@ -5,7 +5,7 @@ class NewReminderForm extends Component {
     var date = <input className="date_input"></input>,
         description =<input className="description_input"></input>;
     return (
-      <div className="new_reminder_form">
+      <div className="new_reminder_form form">
         <h1 className="new_reminder_header">Add New Reminder</h1>
         <label>Date</label> {date}
         <label>Description</label> {description}

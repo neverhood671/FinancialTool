@@ -8,18 +8,43 @@ const INFO_MODE = 0,
 class MainArea extends Component {
 
   state = {
-    mode: INFO_MODE
+    mode: INFO_MODE,
+    isModalWindowShown: false
   }
 
   render() {
-    var header = <div className="main_area_header">Current Mounth Expenses</div>,
-        body = this.state.mode == INFO_MODE ? <Info /> : <DailyInfo />;
+    if (this.state.mode === INFO_MODE) {
+      var body = <Info
+                modalWindowType={this.state.modalWindowType}
+                selectedDate={this.props.selectedDate}
+                isModalWindowShown={this.state.isModalWindowShown}
+                buttonClickHandler={this.handleButtonClick.bind(this)}
+              />
+    } else {
+      var body = <DailyInfo
+                modalWindowType={this.state.modalWindowType}
+                selectedDate={this.props.selectedDate}
+                isModalWindowShown={this.state.isModalWindowShown}
+                buttonClickHandler={this.handleButtonClick.bind(this)}
+              />;
+    }
+
     return (
       <div className="main_area">
-        {header}
         {body}
       </div>
     );
+  }
+
+  handleButtonClick = (e) => {
+    if (e.currentTarget.tagName == "BUTTON"){
+      this.setState({
+        mode: this.state.mode,
+        isModalWindowShown: !this.state.isModalWindowShown,
+        modalWindowType: e.currentTarget.id
+      });
+    }
+
   }
 }
 

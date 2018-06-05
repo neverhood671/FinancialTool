@@ -5,10 +5,14 @@ import BarChartArea from "./BarChartArea";
 
 
 class SideBlock extends Component {
+
   render() {
     return (
       <div className="side_block">
-        <CalendarArea />
+        <CalendarArea
+          selectedDate={this.props.selectedDate}
+          dateChangeHandler={this.props.dateChangeHandler}
+        />
         <BarChartArea />
       </div>
     );
