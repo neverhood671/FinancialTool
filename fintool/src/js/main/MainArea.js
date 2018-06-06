@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DailyInfo from './daily/DailyInfo'
+import ModalWindow from './modal/ModalWindow'
 import Info from './start/Info'
 
 const INFO_MODE = 0,
@@ -8,23 +9,23 @@ const INFO_MODE = 0,
 class MainArea extends Component {
 
   state = {
-    mode: INFO_MODE,
     isModalWindowShown: false
   }
 
   render() {
-    if (this.state.mode === INFO_MODE) {
-      var body = <Info
-                modalWindowType={this.state.modalWindowType}
+    var body, modalWindow =
+      this.state.isModalWindowShown &&
+      <ModalWindow modalWindowType={this.state.modalWindowType}
+                    closeHandler={this.handleButtonClick} />;
+
+    if (this.props.mode === INFO_MODE) {
+      body = <Info
                 selectedDate={this.props.selectedDate}
-                isModalWindowShown={this.state.isModalWindowShown}
                 buttonClickHandler={this.handleButtonClick.bind(this)}
               />
     } else {
-      var body = <DailyInfo
-                modalWindowType={this.state.modalWindowType}
+      body = <DailyInfo
                 selectedDate={this.props.selectedDate}
-                isModalWindowShown={this.state.isModalWindowShown}
                 buttonClickHandler={this.handleButtonClick.bind(this)}
               />;
     }
@@ -32,19 +33,19 @@ class MainArea extends Component {
     return (
       <div className="main_area">
         {body}
+        {modalWindow}
       </div>
     );
   }
 
   handleButtonClick = (e) => {
-    if (e.currentTarget.tagName == "BUTTON"){
+    if (e.currentTarget.tagName == "BUTTON") {
       this.setState({
         mode: this.state.mode,
         isModalWindowShown: !this.state.isModalWindowShown,
         modalWindowType: e.currentTarget.id
       });
     }
-
   }
 }
 

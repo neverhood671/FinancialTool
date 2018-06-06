@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class NewIncomeForm extends Component {
+class NewExpensesForm extends Component {
   render() {
     return ;
   }
 
 }
 
-export default NewIncomeForm;
+export default NewExpensesForm;

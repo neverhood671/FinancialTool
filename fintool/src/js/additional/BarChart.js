@@ -17,8 +17,8 @@ class BarChart extends Component {
         bottom: 30,
         left: 40
       },
-      width = 250 - margin.right,
-      height = 250 - margin.top - margin.bottom;
+      width = 200 - margin.right,
+      height = 200 - margin.top - margin.bottom;
 
     var minX = new Date(),
       maxX = new Date();

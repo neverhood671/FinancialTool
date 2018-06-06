@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class NewReminderForm extends Component {
   render() {
-    var date = <input className="date_input"></input>,
+    var date = <input type="date" className="date_input"></input>,
         description =<input className="description_input"></input>;
     return (
       <div className="new_reminder_form form">

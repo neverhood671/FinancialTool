@@ -9,8 +9,8 @@
 }
 
 .modal_content {
-  width: 50%;
-  height: 50%;
+  width: 500px;
+  height: 300px;
   position: fixed;
   overflow: auto;
   margin: auto;
@@ -78,10 +78,12 @@
 }
 
 .new_reminder_header {
+  font-size: 1.5em;
   grid-area: 1/1/2/3;
 }
 
 .new_note_header {
+  font-size: 1.5em;
   grid-area: 1/1/2/4;
 }
 
@@ -102,7 +104,7 @@
 
 .invalid_input {
   color: red;
-  background: rgba(255, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.2);
 }
 
 .slider {
@@ -121,7 +123,7 @@
   height: 1em;
   border-radius: 0.5em;
   background: red;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transform: translateX(0);
   background-color: #35ab40;
 }
@@ -135,7 +137,7 @@
 }
 
 .slider_checkbox:checked~.slider_circle {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   transform: translateX(1em);
   background-color: #ab3538;
 }

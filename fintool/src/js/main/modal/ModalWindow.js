@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import NewNoteForm from './forms/NewNoteForm';
 import NewReminderForm from './forms/NewReminderForm';
 import NewIncomeForm from './forms/NewIncomeForm';
+import NewExpensesForm from './forms/NewExpensesForm';
+import NewCategoryForm from './forms/NewCategoryForm';
 
 class ModalWindow extends Component {
 
@@ -62,13 +64,13 @@ class ModalWindow extends Component {
   }
 
   isDateValid = (dateString) => {
-    if (!/^\d{1,2}\.\d{1,2}\.\d{4}$/.test(dateString)) {
+    if (!/^\d{4}\-\d{1,2}\-\d{1,2}$/.test(dateString)) {
       return false
     };
-    var parts = dateString.split("."),
-      day = parseInt(parts[1], 10),
-      month = parseInt(parts[0], 10),
-      year = parseInt(parts[2], 10);
+    var parts = dateString.split("-"),
+      day = parseInt(parts[2], 10),
+      month = parseInt(parts[1], 10),
+      year = parseInt(parts[0], 10);
     if (year < 1000 || year > 3000 || month === 0 || month > 12) {
       return false
     };

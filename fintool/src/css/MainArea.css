@@ -1,6 +1,6 @@
 .main_area {
+  grid-column: 2;
   background-color: #f7f7f7;
-  grid-area: 1/2/2/4;
   text-align: center;
   padding: 5%;
 }

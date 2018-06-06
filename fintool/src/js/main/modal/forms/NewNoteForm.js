@@ -11,7 +11,7 @@ class NewNoteForm extends Component {
                   </label>
                   <label className="slider_label">Expenses</label>
                </div>,
-        date = <input className="date_input"></input>,
+        date = <input type="date" className="date_input"></input>,
         category = <select className="category_input"></select>,
         amount = <input className="amount_input"></input>,
         description = <input className="description"></input>;

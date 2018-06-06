@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import StackedBarChart from './StackedBarChart'
 import RemindersBlock from './RemindersBlock'
 import LastNotesBlock from './LastNotesBlock'
-import ModalWindow from '../modal/ModalWindow'
+
 
 const monthMap = {
   0: "Junuary",
@@ -35,10 +35,8 @@ class Info extends Component {
             Add new income/expenses
           </button>,
         reminders = <RemindersBlock/>,
-        lastNotes = <LastNotesBlock/>,
-        modalWindow = this.props.isModalWindowShown &&
-          <ModalWindow modalWindowType={this.props.modalWindowType}
-                        closeHandler={this.props.buttonClickHandler} />
+        lastNotes = <LastNotesBlock/>;
+
     return (
       <div className="info">
         {header}
@@ -47,7 +45,6 @@ class Info extends Component {
         {newIncomeOrExpensesButton}
         {reminders}
         {lastNotes}
-        {modalWindow}
       </div>
     );
   }
