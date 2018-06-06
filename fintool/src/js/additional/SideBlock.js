@@ -7,6 +7,7 @@ const INFO_MODE = 0,
       DAILY_INFO_MODE = 1;
 
 class SideBlock extends Component {
+
   navButtonClickHandler = () => {
     this.props.dateChangeHandler(new Date, +!this.props.mode);
   }
@@ -22,6 +23,7 @@ class SideBlock extends Component {
                       onClick={this.navButtonClickHandler}>
                         {this.props.mode ? "To Start Page": "To Daily Dairy" }
                     </button>;
+
     return (
       <div className="side_block">
         {navButton}
@@ -33,6 +35,7 @@ class SideBlock extends Component {
       </div>
     );
   }
+
 }
 
 export default SideBlock;

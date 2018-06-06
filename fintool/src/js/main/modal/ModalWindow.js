@@ -5,6 +5,7 @@ import NewIncomeForm from './forms/NewIncomeForm';
 import NewExpensesForm from './forms/NewExpensesForm';
 import NewCategoryForm from './forms/NewCategoryForm';
 
+
 class ModalWindow extends Component {
 
   constructor(props) {
@@ -99,16 +100,18 @@ class ModalWindow extends Component {
   getForm(modalWindowType) {
     switch (modalWindowType) {
       case "new_reminder":
-        return < NewReminderForm / >;
+        return <NewReminderForm />;
       case "new_note":
-        return < NewNoteForm / >;
+        return <NewNoteForm />;
       case "new_income":
-        return < NewIncomeForm />
+        return <NewIncomeForm />;
         break;
       case "new_expenses":
-        return;
+        return <NewExpensesForm />;
+        break;
       case "new_category":
-        return;
+      return <NewCategoryForm />;
+      break;
     }
   }
 }

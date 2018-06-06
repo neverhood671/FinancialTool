@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import MainNoteForm from './MainNoteForm'
 
 class NewIncomeForm extends Component {
   render() {
-    return ;
+    return (
+      <div className="new_note_form form">
+        <h1 className="new_note_header">Add New Income</h1>
+        <MainNoteForm/>
+      </div>
+    );
   }
 
 }
